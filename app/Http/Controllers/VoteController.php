@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Lastvote;
 use App\Models\Vote;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -16,31 +17,16 @@ class VoteController extends Controller
     public function index()
     {
          $votes = Vote::all();
-        //  $array1 = $votes1->toArray();
-        //  dd($array1);
-
-        //  $votes2 = Vote::all()->where('month', 8);
-        //  $array2 = $votes2->toArray();
-        //  dd($array2);
-
-        // $votes1 = collect(['name' => 'Desk', 'price' => 200]);
-
-        // $votes1 = collect(Vote::all()->where('month', 9)->get()->toArray());
-
-        // $votes2 = Vote::all()->where('month', 8);
-        // $counts1 = $votes1->pluck('count');
-        // $counts2 = $votes2->pluck('count');
-        //$updown = $counts2 - $counts1;
-
-
-        // $updown = $counts1->diff($counts2);
-        // dd($updown);
-
-        // $votes2 = Vote::all()->where('month', 8);
-
-
 
         return view('welcome', compact('votes'));
+
+    }
+
+    public function lastmonth()
+    {
+         $votes = Lastvote::all();
+
+        return view('lastmonth', compact('votes'));
 
     }
 
@@ -77,6 +63,15 @@ class VoteController extends Controller
         // dd($vote);
         $actress = Vote::find($id);
         return view('actress', compact('actress'));
+    }
+
+
+    public function showlast(Vote $vote, $id)
+    {
+
+        // dd($vote);
+        $actress = Lastvote::find($id);
+        return view('actress_last', compact('actress'));
     }
 
     /**

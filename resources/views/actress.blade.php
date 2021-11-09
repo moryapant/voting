@@ -18,9 +18,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="">
 
-    <title>Laravel</title>
+    <title>Shaggers index</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -53,16 +53,16 @@
 
     <div class="m-8 ">
         <h1 class="text-black font-semibold text-5xl mx-64 mb-2 p-4 text-center bg-indigo-400">
-            Shaggers Index Sept'21 </h1>
+            Shaggers Index Oct'21 </h1>
 
         <div>
 
 
             <!-- This example requires Tailwind CSS v2.0+ -->
             <nav class="bg-gray-800">
-                <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-                    <div class="relative flex items-center justify-between h-16">
-                        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <div class="max-w-full mx-auto px-2 sm:px-6 lg:px-8">
+                    <div class=" items-center justify-between h-16">
+                        <div class="flex items-center">
                             <!-- Mobile menu button-->
                             <button type="button"
                                 class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -75,11 +75,7 @@
 
                   Menu open: "hidden", Menu closed: "block"
                 -->
-                                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h16M4 18h16" />
-                                </svg>
+
                                 <!--
                   Icon when menu is open.
 
@@ -134,7 +130,7 @@
                 </div>
 
                 <!-- Mobile menu, show/hide based on menu state. -->
-                <div class="sm:hidden" id="mobile-menu">
+                <div class="" id="mobile-menu">
 
                 </div>
             </nav>
@@ -148,15 +144,15 @@
 
     <!---- NAVBAR --->
 
- <section class="m-8 relative pt-12 bg-gray-50-50">
+    <section class="m-8 relative pt-12 bg-gray-50-50">
 
-    <div class="items-center flex">
+        <div class="items-center flex">
+            <div class="flex mr-4 object-cover">
+                <img alt="..." class="rounded-lg shadow-lg object-cover h-full w-full" src="/img_oct/{{ $actress->image }}">
+            </div>
 
-        <div class="flex mr-4 object-cover">
-            <img alt="..." class="rounded-lg shadow-lg object-cover h-full w-full" src="/img/{{ $actress->image }}">
-        </div>
 
-        <div class="flex ml-4 w-1/2">
+            <div class="flex ml-4 w-1/2">
            <div>
             <div class="md:pr-12">
                 <div class="text-white-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-black-300 mt-8 mr-3">

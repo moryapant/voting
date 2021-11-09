@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="">
 
-    <title>Voting App</title>
+    <title>Shaggers Bollywood Poll</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -30,16 +30,13 @@
 
         {{-- <div>
             @foreach ($votes as  $vote)
-
             {{ $vote->name }};
-
         @endforeach
-
     </div> --}}
 
     <div class="m-8 ">
         <h1 class="text-black font-semibold text-5xl mx-64 mb-2 p-4 text-center bg-indigo-400">
-            Shaggers Index Sept'21 </h1>
+            Shaggers Index Oct'21 </h1>
 
         <div>
 
@@ -56,9 +53,7 @@
                                 <span class="sr-only">Open main menu</span>
                                 <!--
                   Icon when menu is closed.
-
                   Heroicon name: outline/menu
-
                   Menu open: "hidden", Menu closed: "block"
                 -->
                                 <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -68,9 +63,7 @@
                                 </svg>
                                 <!--
                   Icon when menu is open.
-
                   Heroicon name: outline/x
-
                   Menu open: "block", Menu closed: "hidden"
                 -->
                                 <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -97,7 +90,8 @@
                                         INDEX</a>
                                         <a href='{!! url('/dashboard'); !!}'
                                         class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">DASHBOARD</a>
-
+                                        <a href='{!! url('/lastmonth'); !!}'
+                                        class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">SEPT'21 </a>
 
 
 
@@ -168,7 +162,7 @@
         </thead>
 
 
-    <tbody class="bg-gray-200">
+    <tbody class="text-gray-700 w-full h-full">
 
             @foreach ($votes as $vote )
 
@@ -176,12 +170,9 @@
 
 
         {{-- Image --}}
-        <tr class="bg-white border-4 border-gray-200">
-                <td class="px-16 py-2 flex flex-row items-center">
-                    <img class="h-24 w-24 rounded-full object-cover "
-                    src="/img/{{ $vote->avtaar }}"
-                        alt="" />
-
+        <tr class="w-full h-full items-center border-gray-200 border-4">
+                <td class="text-left py-3 px-4">
+                    <div class="object-cover items-center w-24 h-24"><img class="" src="/img_oct/{{ $vote->avtaar }}"></div>
                 </td>
 
         {{-- Name --}}
@@ -312,7 +303,6 @@
                       src="https://preview.redd.it/2a0zb5bdvwl71.jpg?width=864&format=pjpg&auto=webp&s=fd66068967a340d32e60d98bb102c5485367e50e"
                       alt=""
                     />
-
                   </td>
                   <td>
                     <span class="text-center ml-2 font-semibold"><a href="2.html">Kajal Aggarwal</a></span>
@@ -328,12 +318,9 @@
                   <td class="px-16 py-2">
                       <span class="" style="color: limegreen;">
                            <i class="fas fa-arrow-alt-circle-up fa-3x"></i>
-
                       </span>
                       <span>1 positions</span>
-
                   </td>
-
                   <td class="px-16 py-2">
                      <span class="text-green-500" style="color: limegreen;">
                    <i class="fas fa-arrow-alt-circle-up fa-3x"></i>
@@ -342,7 +329,6 @@
                   </td>
               </tr>
         <!--no.2-->
-
         <!--no.3-->
               <tr class="bg-white border-4 border-gray-200">
                   <td class="px-16 py-2 flex flex-row items-center">
@@ -351,7 +337,6 @@
                       src="https://i.redd.it/mu4d7xuzbqo71.jpg"
                       alt=""
                     />
-
                   </td>
                   <td>
                     <span class="text-center ml-2 font-semibold"><a href="3.html">Deepika Padukone</a></span>
@@ -367,12 +352,9 @@
                   <td class="px-16 py-2">
                       <span class="" style="color: tomato;">
                            <i class="fas fa-arrow-alt-circle-down fa-3x"></i>
-
                       </span>
                       <span>1 positions</span>
-
                   </td>
-
                   <td class="px-16 py-2">
                      <span class="text-green-500" style="color: limegreen;">
                    <i class="fas fa-arrow-alt-circle-up fa-3x"></i>
@@ -381,7 +363,6 @@
                   </td>
               </tr>
         <!--no.3-->
-
         <!--no.4-->
               <tr class="bg-white border-4 border-gray-200">
                   <td class="px-16 py-2 flex flex-row items-center">
@@ -390,7 +371,6 @@
                       src="https://preview.redd.it/vlg4z1akh4o71.jpg?width=990&format=pjpg&auto=webp&s=4a33f58fad25c3ff768e2dc04a2c17a3cb10e7db"
                       alt=""
                     />
-
                   </td>
                   <td>
                     <span class="text-center ml-2 font-semibold"><a href="4.html">Kriti Sanon</a></span>
@@ -406,12 +386,9 @@
                   <td class="px-16 py-2">
                       <span class="" style="color: limegreen;">
                            <i class="fas fa-arrow-alt-circle-up fa-3x"></i>
-
                       </span>
                       <span>3 positions</span>
-
                   </td>
-
                   <td class="px-16 py-2">
                      <span class="text-green-500" style="color: limegreen;">
                    <i class="fas fa-arrow-alt-circle-up fa-3x"></i>
@@ -420,7 +397,6 @@
                   </td>
               </tr>
         <!--no.4-->
-
         <!--no.5-->
               <tr class="bg-white border-4 border-gray-200">
                   <td class="px-16 py-2 flex flex-row items-center">
@@ -429,7 +405,6 @@
                       src="https://i.redd.it/hqc0yd35pvf71.jpg"
                       alt=""
                     />
-
                   </td>
                   <td>
                     <span class="text-center ml-2 font-semibold"><a href="5.html">Alia Bhatt</a></span>
@@ -438,9 +413,6 @@
                     <a href="5.html" class="bg-indigo-500 text-white px-4 py-2 border rounded-md hover:bg-white hover:border-indigo-500 hover:text-black ">
                      801
                     </a>
-
-
-
                   </td>
                   <td class="px-16 py-2">
                     <span class="text-center ml-2 font-semibold text-2xl">5</span>
@@ -448,12 +420,9 @@
                   <td class="px-16 py-2">
                       <span class="" style="color: tomato;">
                            <i class="fas fa-arrow-alt-circle-down fa-3x"></i>
-
                       </span>
                       <span>1 position</span>
-
                   </td>
-
                   <td class="px-16 py-2">
                      <span class="text-green-500" style="color: limegreen;">
                    <i class="fas fa-arrow-alt-circle-up fa-3x"></i>
@@ -462,7 +431,6 @@
                   </td>
               </tr>
         <!--no.5-->
-
         <!--no.6-->
               <tr class="bg-white border-4 border-gray-200">
                   <td class="px-16 py-2 flex flex-row items-center">
@@ -471,7 +439,6 @@
                       src="https://i.redd.it/750rdzpk4bk71.jpg"
                       alt=""
                     />
-
                   </td>
                   <td>
                     <span class="text-center ml-2 font-semibold"><a href="6.html">Kiara Advani</a></span>
@@ -487,12 +454,9 @@
                   <td class="px-16 py-2">
                       <span style="color: black;">
                             <i class="fas fa-arrows-alt-h fa-3x"></i>
-
                       </span>
                       <span></span>
-
                   </td>
-
                   <td class="px-16 py-2">
                      <span class="text-green-500" style="color: limegreen;">
                    <i class="fas fa-arrow-alt-circle-up fa-3x"></i>
@@ -509,7 +473,6 @@
                       src="https://i.redd.it/ut6x62q04wn71.jpg"
                       alt=""
                     />
-
                   </td>
                   <td>
                     <span class="text-center ml-2 font-semibold bg-green-500 p-2"><a href="7.html">Nora Fatehi</a></span>
@@ -525,12 +488,9 @@
                   <td class="px-16 py-2">
                       <span style="color: royalblue;">
                           <i class="fas fa-thumbs-up fa-3x"></i>
-
                       </span>
                       <span></span>
-
                   </td>
-
                   <td class="px-16 py-2">
                      <span class="text-green-500" style="color: limegreen;">
                    <!-- <i class="fas fa-arrow-alt-circle-up fa-3x"></i> -->
@@ -539,7 +499,6 @@
                   </td>
               </tr>
         <!--no.7-->
-
         <!--no.8-->
               <tr class="bg-white border-4 border-gray-200">
                   <td class="px-16 py-2 flex flex-row items-center">
@@ -548,7 +507,6 @@
                       src="https://preview.redd.it/hzncpok05to71.jpg?width=640&format=pjpg&auto=webp&s=e88cb5ab0b7fbc6baa4185e9fe1cfc128072cd8b"
                       alt=""
                     />
-
                   </td>
                   <td>
                     <span class="text-center ml-2 font-semibold"><a href="8.html">Kareen Kapoor</a></span>
@@ -564,12 +522,9 @@
                   <td class="px-16 py-2">
                       <span class="" style="color: tomato;">
                            <i class="fas fa-arrow-alt-circle-down fa-3x"></i>
-
                       </span>
                       <span>3 Positions</span>
-
                   </td>
-
                   <td class="px-16 py-2">
                      <span class="text-green-500" style="color: limegreen;">
                    <i class="fas fa-arrow-alt-circle-up fa-3x"></i>
@@ -578,7 +533,6 @@
                   </td>
               </tr>
         <!--no.8-->
-
         <!--no.9-->
               <tr class="bg-white border-4 border-gray-200">
                   <td class="px-16 py-2 flex flex-row items-center">
@@ -587,7 +541,6 @@
                       src="https://i.redd.it/soo9ss5z76p71.jpg"
                       alt=""
                     />
-
                   </td>
                   <td>
                     <span class="text-center ml-2 font-semibold"><a href="9.html">Anushka Sharma</a></span>
@@ -603,12 +556,9 @@
                   <td class="px-16 py-2">
                       <span class="" style="color: tomato;">
                            <i class="fas fa-arrow-alt-circle-down fa-3x"></i>
-
                       </span>
                       <span>1 Positions</span>
-
                   </td>
-
                   <td class="px-16 py-2">
                      <span class="text-green-500" style="color: limegreen;">
                    <i class="fas fa-arrow-alt-circle-up fa-3x"></i>
@@ -617,8 +567,6 @@
                   </td>
               </tr>
         <!--no.9-->
-
-
         <!--no.10-->
               <tr class="bg-white border-4 border-gray-200">
                   <td class="px-16 py-2 flex flex-row items-center">
@@ -627,7 +575,6 @@
                       src="https://i.redd.it/pzvdps9adzo71.jpg"
                       alt=""
                     />
-
                   </td>
                   <td>
                     <span class="text-center ml-2 font-semibold"><a href="10.html">Disha Patani</a></span>
@@ -643,12 +590,9 @@
                   <td class="px-16 py-2">
                       <span class="" style="color: tomato;">
                            <i class="fas fa-arrow-alt-circle-down fa-3x"></i>
-
                       </span>
                       <span>1 Positions</span>
-
                   </td>
-
                   <td class="px-16 py-2">
                      <span class="text-green-500" style="color: limegreen;">
                    <i class="fas fa-arrow-alt-circle-up fa-3x"></i>

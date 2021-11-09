@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 {{-- <x-jet-welcome /> --}}
 
-                <h1 class="text-lg font-bold">Welcome to Dashboard</h1>
+                <h1 class="font-bold items-center text-center text-4xl">Voting will start soon!</h1>
             </div>
         </div>
     </div>

@@ -21,7 +21,7 @@ use App\Http\Controllers\VoteController;
 
 
 Route::get('/', [VoteController::class, 'index'])->name('dashboard');
-
+Route::get('/lastmonth', [VoteController::class, 'lastmonth'])->name('lastmonth');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
@@ -30,3 +30,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 });
 
 Route::get('/{name?}', [VoteController::class, 'show'])->middleware(['auth:sanctum', 'verified']);
+Route::get('/lastmonth/{name?}', [VoteController::class, 'showlast'])->middleware(['auth:sanctum', 'verified']);
